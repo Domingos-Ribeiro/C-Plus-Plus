@@ -49,6 +49,8 @@ namespace ProjetoCLR {
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
+
 	protected:
 
 
@@ -80,12 +82,16 @@ namespace ProjetoCLR {
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// cbo_cidade
 			// 
 			this->cbo_cidade->FormattingEnabled = true;
-			this->cbo_cidade->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Braga", L"Porto", L"Coimbra" });
+			this->cbo_cidade->Items->AddRange(gcnew cli::array< System::Object^  >(3)
+				{
+				L"Braga", L"Porto", L"Coimbra"
+				});
 			this->cbo_cidade->Location = System::Drawing::Point(214, 99);
 			this->cbo_cidade->Name = L"cbo_cidade";
 			this->cbo_cidade->Size = System::Drawing::Size(89, 21);
@@ -147,10 +153,11 @@ namespace ProjetoCLR {
 			// comboBox2
 			// 
 			this->comboBox2->FormattingEnabled = true;
-			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(12) {
+			this->comboBox2->Items->AddRange(gcnew cli::array< System::Object^  >(12)
+				{
 				L"81", L"80", L"79", L"78", L"77", L"76", L"75",
 					L"74", L"73", L"72", L"71", L"70"
-			});
+				});
 			this->comboBox2->Location = System::Drawing::Point(564, 123);
 			this->comboBox2->Name = L"comboBox2";
 			this->comboBox2->Size = System::Drawing::Size(121, 21);
@@ -160,10 +167,11 @@ namespace ProjetoCLR {
 			// comboBox1
 			// 
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(12) {
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(12)
+				{
 				L"90.5", L"90", L"89.5", L"89", L"88.5", L"88",
 					L"87.5", L"87", L"86.5", L"86", L"85.5", L"85"
-			});
+				});
 			this->comboBox1->Location = System::Drawing::Point(691, 123);
 			this->comboBox1->Name = L"comboBox1";
 			this->comboBox1->Size = System::Drawing::Size(121, 21);
@@ -192,11 +200,21 @@ namespace ProjetoCLR {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(366, 412);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(223, 23);
+			this->button3->TabIndex = 12;
+			this->button3->Text = L"Botão extra, só para teste";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(943, 480);
+			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->comboBox1);
@@ -213,7 +231,7 @@ namespace ProjetoCLR {
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
-		}
+			}
 #pragma endregion
 	private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) 
 	
