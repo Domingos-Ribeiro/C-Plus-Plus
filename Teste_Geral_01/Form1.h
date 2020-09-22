@@ -1,5 +1,6 @@
 #pragma once
 #include "Form_2.h"
+#include "Form_3.h"
 
 namespace ProjetoCLR {
 
@@ -135,7 +136,7 @@ namespace ProjetoCLR {
 			// nadaAEditarToolStripMenuItem
 			// 
 			this->nadaAEditarToolStripMenuItem->Name = L"nadaAEditarToolStripMenuItem";
-			this->nadaAEditarToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->nadaAEditarToolStripMenuItem->Size = System::Drawing::Size(144, 22);
 			this->nadaAEditarToolStripMenuItem->Text = L"Nada a Editar";
 			// 
 			// viewToolStripMenuItem
@@ -178,6 +179,7 @@ namespace ProjetoCLR {
 			this->segundoToolStripMenuItem->Name = L"segundoToolStripMenuItem";
 			this->segundoToolStripMenuItem->Size = System::Drawing::Size(201, 22);
 			this->segundoToolStripMenuItem->Text = L"Encomenda";
+			this->segundoToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::segundoToolStripMenuItem_Click);
 			// 
 			// terceiroToolStripMenuItem
 			// 
@@ -256,6 +258,14 @@ private: System::Void primeiroToolStripMenuItem_Click(System::Object^ sender, Sy
 	{
 	this->Hide();
 	ProjetoCLR::Form_2 formS;
+	formS.ShowDialog();
+	this->Show();
+
+	}
+private: System::Void segundoToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+	this->Hide();
+	ProjetoCLR::Form_3 formS;
 	formS.ShowDialog();
 	this->Show();
 

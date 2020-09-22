@@ -7,3 +7,4 @@ A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.Form_2.re
 A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.vcxproj.GenerateResource.cache
 A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.exe
 A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.pdb
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.Form_3.resources

@@ -1,7 +1,6 @@
 ﻿  Form1.cpp
 A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Form1.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  Form_2.cpp
-  .NETFramework,Version=v4.6.AssemblyAttributes.cpp
+  Form_3.cpp
   Generating Code...
   Form1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   ProjetoCLR.vcxproj -> A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.exe
