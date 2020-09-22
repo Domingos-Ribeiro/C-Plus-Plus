@@ -1,0 +1,13 @@
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.vcxprojAssemblyReference.cache
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.exe
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.pdb
+A:\C++\IEFP\C++\Projeto 8 - Encomenda\Debug\ProjetoCLR.vcxprojAssemblyReference.cache
+A:\C++\IEFP\C++\Projeto 8 - Encomenda\Debug\ProjetoCLR.Form1.resources
+A:\C++\IEFP\C++\Projeto 8 - Encomenda\Debug\ProjetoCLR.vcxproj.GenerateResource.cache
+A:\C++\IEFP\C++\Projeto 8 - Encomenda\Debug\ProjetoCLR.exe
+A:\C++\IEFP\C++\Projeto 8 - Encomenda\Debug\ProjetoCLR.pdb
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Debug\ProjetoCLR.vcxprojAssemblyReference.cache
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Debug\ProjetoCLR.Form1.resources
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Debug\ProjetoCLR.vcxproj.GenerateResource.cache
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Debug\ProjetoCLR.exe
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Debug\ProjetoCLR.pdb

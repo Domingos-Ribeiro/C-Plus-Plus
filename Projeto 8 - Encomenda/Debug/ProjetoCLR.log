@@ -1,0 +1,8 @@
+﻿  Form1.cpp
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Form1.h(442,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Form1.h(477,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Form1.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  .NETFramework,Version=v4.6.AssemblyAttributes.cpp
+  Generating Code...
+  Form1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  ProjetoCLR.vcxproj -> A:\GitHub\Os meus Projetos\C-Plus-Plus\Projeto 8 - Encomenda\Debug\ProjetoCLR.exe
