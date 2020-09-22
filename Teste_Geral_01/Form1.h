@@ -278,7 +278,7 @@ private: System::Void segundoToolStripMenuItem_Click(System::Object^ sender, Sys
 	}
 private: System::Void sairToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-	Windows::Forms::DialogResult fechar = MessageBox::Show("Tem certeza que deseja sair?\nHoje temos mais descontos!", "Aviso", MessageBoxButtons::YesNo, MessageBoxIcon::Warning);
+	Windows::Forms::DialogResult fechar = MessageBox::Show("Tem certeza que deseja sair?", "Aviso", MessageBoxButtons::YesNo, MessageBoxIcon::Warning);
 	if (fechar == Windows::Forms::DialogResult::Yes) Application::Exit();
 
 	}
