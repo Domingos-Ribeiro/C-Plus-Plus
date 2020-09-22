@@ -48,8 +48,13 @@ namespace ProjetoCLR {
 	private: System::Windows::Forms::ToolStripMenuItem^ projeto2ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ projeto3ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ helpToolStripMenuItem;
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::ToolStripMenuItem^ nadaAEditarToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ aindaNãoTemNadaParaVerToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ perguntaAoProfToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ créditosToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ sairToolStripMenuItem;
+
+
 
 	protected:
 
@@ -79,8 +84,11 @@ namespace ProjetoCLR {
 			this->projeto2ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->projeto3ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->aindaNãoTemNadaParaVerToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->nadaAEditarToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->perguntaAoProfToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->créditosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -99,18 +107,30 @@ namespace ProjetoCLR {
 			// 
 			// fileToolStripMenuItem
 			// 
+			this->fileToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1)
+				{
+				this->sairToolStripMenuItem
+				});
 			this->fileToolStripMenuItem->Name = L"fileToolStripMenuItem";
 			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
 			this->fileToolStripMenuItem->Text = L"File";
 			// 
 			// editToolStripMenuItem
 			// 
+			this->editToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1)
+				{
+				this->nadaAEditarToolStripMenuItem
+				});
 			this->editToolStripMenuItem->Name = L"editToolStripMenuItem";
 			this->editToolStripMenuItem->Size = System::Drawing::Size(39, 20);
 			this->editToolStripMenuItem->Text = L"Edit";
 			// 
 			// viewToolStripMenuItem
 			// 
+			this->viewToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1)
+				{
+				this->aindaNãoTemNadaParaVerToolStripMenuItem
+				});
 			this->viewToolStripMenuItem->Name = L"viewToolStripMenuItem";
 			this->viewToolStripMenuItem->Size = System::Drawing::Size(44, 20);
 			this->viewToolStripMenuItem->Text = L"View";
@@ -171,39 +191,55 @@ namespace ProjetoCLR {
 			// 
 			// helpToolStripMenuItem
 			// 
+			this->helpToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2)
+				{
+				this->perguntaAoProfToolStripMenuItem,
+					this->créditosToolStripMenuItem
+				});
 			this->helpToolStripMenuItem->Name = L"helpToolStripMenuItem";
 			this->helpToolStripMenuItem->Size = System::Drawing::Size(44, 20);
 			this->helpToolStripMenuItem->Text = L"Help";
 			// 
-			// button1
+			// aindaNãoTemNadaParaVerToolStripMenuItem
 			// 
-			this->button1->Location = System::Drawing::Point(428, 393);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 1;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->aindaNãoTemNadaParaVerToolStripMenuItem->Name = L"aindaNãoTemNadaParaVerToolStripMenuItem";
+			this->aindaNãoTemNadaParaVerToolStripMenuItem->Size = System::Drawing::Size(226, 22);
+			this->aindaNãoTemNadaParaVerToolStripMenuItem->Text = L"Ainda não tem nada para ver";
 			// 
-			// button2
+			// nadaAEditarToolStripMenuItem
 			// 
-			this->button2->Location = System::Drawing::Point(450, 297);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
-			this->button2->TabIndex = 2;
-			this->button2->Text = L"button2";
-			this->button2->UseVisualStyleBackColor = true;
+			this->nadaAEditarToolStripMenuItem->Name = L"nadaAEditarToolStripMenuItem";
+			this->nadaAEditarToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->nadaAEditarToolStripMenuItem->Text = L"Nada a Editar";
+			// 
+			// perguntaAoProfToolStripMenuItem
+			// 
+			this->perguntaAoProfToolStripMenuItem->Name = L"perguntaAoProfToolStripMenuItem";
+			this->perguntaAoProfToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->perguntaAoProfToolStripMenuItem->Text = L"Não há ajuda";
+			this->perguntaAoProfToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::perguntaAoProfToolStripMenuItem_Click);
+			// 
+			// créditosToolStripMenuItem
+			// 
+			this->créditosToolStripMenuItem->Name = L"créditosToolStripMenuItem";
+			this->créditosToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->créditosToolStripMenuItem->Text = L"Créditos";
+			// 
+			// sairToolStripMenuItem
+			// 
+			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
+			this->sairToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->sairToolStripMenuItem->Text = L"Sair";
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(642, 585);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"Form1";
-			this->Text = L"Janela Principal";
+			this->Text = L"Resumo dos Exercícios de C++";
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -211,5 +247,8 @@ namespace ProjetoCLR {
 
 			}
 #pragma endregion
-	};
+	private: System::Void perguntaAoProfToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+		{
+		}
+};
 }
