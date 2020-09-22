@@ -1,0 +1,6 @@
+﻿  Form1.cpp
+C:\@Projetos-EFA\ProjetoCLR\Form1.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  .NETFramework,Version=v4.6.AssemblyAttributes.cpp
+  Generating Code...
+  Form1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  ProjetoCLR.vcxproj -> C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.exe

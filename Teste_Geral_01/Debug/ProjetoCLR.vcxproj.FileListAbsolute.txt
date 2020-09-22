@@ -1,0 +1,8 @@
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.vcxprojAssemblyReference.cache
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.exe
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.pdb
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.vcxprojAssemblyReference.cache
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.Form1.resources
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.vcxproj.GenerateResource.cache
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.exe
+A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.pdb
