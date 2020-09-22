@@ -48,6 +48,7 @@ namespace ProjetoCLR {
 	private: System::Windows::Forms::ToolStripMenuItem^ projeto2ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ projeto3ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ helpToolStripMenuItem;
+	private: System::Windows::Forms::Button^ button1;
 
 	protected:
 
@@ -69,7 +70,6 @@ namespace ProjetoCLR {
 			this->editToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->viewToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exercíciosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->primeiroToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->segundoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->terceiroToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -77,6 +77,8 @@ namespace ProjetoCLR {
 			this->projeto1ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->projeto2ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->projeto3ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -123,12 +125,6 @@ namespace ProjetoCLR {
 			this->exercíciosToolStripMenuItem->Size = System::Drawing::Size(70, 20);
 			this->exercíciosToolStripMenuItem->Text = L"Exercícios";
 			// 
-			// helpToolStripMenuItem
-			// 
-			this->helpToolStripMenuItem->Name = L"helpToolStripMenuItem";
-			this->helpToolStripMenuItem->Size = System::Drawing::Size(44, 20);
-			this->helpToolStripMenuItem->Text = L"Help";
-			// 
 			// primeiroToolStripMenuItem
 			// 
 			this->primeiroToolStripMenuItem->Name = L"primeiroToolStripMenuItem";
@@ -171,11 +167,27 @@ namespace ProjetoCLR {
 			this->projeto3ToolStripMenuItem->Size = System::Drawing::Size(201, 22);
 			this->projeto3ToolStripMenuItem->Text = L"Projeto 3";
 			// 
+			// helpToolStripMenuItem
+			// 
+			this->helpToolStripMenuItem->Name = L"helpToolStripMenuItem";
+			this->helpToolStripMenuItem->Size = System::Drawing::Size(44, 20);
+			this->helpToolStripMenuItem->Text = L"Help";
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(428, 393);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->TabIndex = 1;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(642, 585);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"Form1";
