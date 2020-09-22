@@ -1,0 +1,3 @@
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.vcxprojAssemblyReference.cache
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.exe
+C:\@Projetos-EFA\ProjetoCLR\Debug\ProjetoCLR.pdb
