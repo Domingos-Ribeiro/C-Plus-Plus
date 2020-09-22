@@ -2,9 +2,7 @@
 A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Form_3.h(465,1): warning C4305: 'initializing': truncation from 'double' to 'float'
 A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Form_3.h(500,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Form1.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  Form_3.cpp
-A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Form_3.h(465,1): warning C4305: 'initializing': truncation from 'double' to 'float'
-A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Form_3.h(500,26): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Form_2.cpp
   Generating Code...
   Form1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   ProjetoCLR.vcxproj -> A:\GitHub\Os meus Projetos\C-Plus-Plus\Teste_Geral_01\Debug\ProjetoCLR.exe
