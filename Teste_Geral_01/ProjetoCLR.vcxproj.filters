@@ -18,9 +18,15 @@
     <ClCompile Include="Form1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Form_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Form_2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

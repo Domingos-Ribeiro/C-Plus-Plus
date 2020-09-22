@@ -121,15 +121,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="Form_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form_2.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2.resx">
+      <DependentUpon>Form_2.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

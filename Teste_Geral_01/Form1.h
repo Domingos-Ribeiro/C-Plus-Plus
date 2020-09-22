@@ -1,4 +1,5 @@
 #pragma once
+#include "Form_2.h"
 
 namespace ProjetoCLR {
 
@@ -73,8 +74,11 @@ namespace ProjetoCLR {
 		{
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->editToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->nadaAEditarToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->viewToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->aindaNãoTemNadaParaVerToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exercíciosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->primeiroToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->segundoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -84,11 +88,8 @@ namespace ProjetoCLR {
 			this->projeto2ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->projeto3ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->helpToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aindaNãoTemNadaParaVerToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->nadaAEditarToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->perguntaAoProfToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->créditosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -115,6 +116,12 @@ namespace ProjetoCLR {
 			this->fileToolStripMenuItem->Size = System::Drawing::Size(37, 20);
 			this->fileToolStripMenuItem->Text = L"File";
 			// 
+			// sairToolStripMenuItem
+			// 
+			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
+			this->sairToolStripMenuItem->Size = System::Drawing::Size(93, 22);
+			this->sairToolStripMenuItem->Text = L"Sair";
+			// 
 			// editToolStripMenuItem
 			// 
 			this->editToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1)
@@ -125,6 +132,12 @@ namespace ProjetoCLR {
 			this->editToolStripMenuItem->Size = System::Drawing::Size(39, 20);
 			this->editToolStripMenuItem->Text = L"Edit";
 			// 
+			// nadaAEditarToolStripMenuItem
+			// 
+			this->nadaAEditarToolStripMenuItem->Name = L"nadaAEditarToolStripMenuItem";
+			this->nadaAEditarToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->nadaAEditarToolStripMenuItem->Text = L"Nada a Editar";
+			// 
 			// viewToolStripMenuItem
 			// 
 			this->viewToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1)
@@ -134,6 +147,12 @@ namespace ProjetoCLR {
 			this->viewToolStripMenuItem->Name = L"viewToolStripMenuItem";
 			this->viewToolStripMenuItem->Size = System::Drawing::Size(44, 20);
 			this->viewToolStripMenuItem->Text = L"View";
+			// 
+			// aindaNãoTemNadaParaVerToolStripMenuItem
+			// 
+			this->aindaNãoTemNadaParaVerToolStripMenuItem->Name = L"aindaNãoTemNadaParaVerToolStripMenuItem";
+			this->aindaNãoTemNadaParaVerToolStripMenuItem->Size = System::Drawing::Size(226, 22);
+			this->aindaNãoTemNadaParaVerToolStripMenuItem->Text = L"Ainda não tem nada para ver";
 			// 
 			// exercíciosToolStripMenuItem
 			// 
@@ -152,6 +171,7 @@ namespace ProjetoCLR {
 			this->primeiroToolStripMenuItem->Name = L"primeiroToolStripMenuItem";
 			this->primeiroToolStripMenuItem->Size = System::Drawing::Size(201, 22);
 			this->primeiroToolStripMenuItem->Text = L"Alguns Itens da Toolbox";
+			this->primeiroToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::primeiroToolStripMenuItem_Click);
 			// 
 			// segundoToolStripMenuItem
 			// 
@@ -200,36 +220,18 @@ namespace ProjetoCLR {
 			this->helpToolStripMenuItem->Size = System::Drawing::Size(44, 20);
 			this->helpToolStripMenuItem->Text = L"Help";
 			// 
-			// aindaNãoTemNadaParaVerToolStripMenuItem
-			// 
-			this->aindaNãoTemNadaParaVerToolStripMenuItem->Name = L"aindaNãoTemNadaParaVerToolStripMenuItem";
-			this->aindaNãoTemNadaParaVerToolStripMenuItem->Size = System::Drawing::Size(226, 22);
-			this->aindaNãoTemNadaParaVerToolStripMenuItem->Text = L"Ainda não tem nada para ver";
-			// 
-			// nadaAEditarToolStripMenuItem
-			// 
-			this->nadaAEditarToolStripMenuItem->Name = L"nadaAEditarToolStripMenuItem";
-			this->nadaAEditarToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->nadaAEditarToolStripMenuItem->Text = L"Nada a Editar";
-			// 
 			// perguntaAoProfToolStripMenuItem
 			// 
 			this->perguntaAoProfToolStripMenuItem->Name = L"perguntaAoProfToolStripMenuItem";
-			this->perguntaAoProfToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->perguntaAoProfToolStripMenuItem->Size = System::Drawing::Size(144, 22);
 			this->perguntaAoProfToolStripMenuItem->Text = L"Não há ajuda";
 			this->perguntaAoProfToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::perguntaAoProfToolStripMenuItem_Click);
 			// 
 			// créditosToolStripMenuItem
 			// 
 			this->créditosToolStripMenuItem->Name = L"créditosToolStripMenuItem";
-			this->créditosToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->créditosToolStripMenuItem->Size = System::Drawing::Size(144, 22);
 			this->créditosToolStripMenuItem->Text = L"Créditos";
-			// 
-			// sairToolStripMenuItem
-			// 
-			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
-			this->sairToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->sairToolStripMenuItem->Text = L"Sair";
 			// 
 			// Form1
 			// 
@@ -250,5 +252,13 @@ namespace ProjetoCLR {
 	private: System::Void perguntaAoProfToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 		{
 		}
+private: System::Void primeiroToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+	this->Hide();
+	ProjetoCLR::Form_2 formS;
+	formS.ShowDialog();
+	this->Show();
+
+	}
 };
 }
