@@ -34,6 +34,8 @@ namespace ProjetoCLR {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::GroupBox^ groupBox1;
+	protected:
 
 	private:
 		/// <summary>
@@ -48,15 +50,28 @@ namespace ProjetoCLR {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Form_3::typeid));
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->SuspendLayout();
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"groupBox1.BackgroundImage")));
+			this->groupBox1->Location = System::Drawing::Point(-2, -8);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(573, 168);
+			this->groupBox1->TabIndex = 0;
+			this->groupBox1->TabStop = false;
 			// 
 			// Form_3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(451, 700);
+			this->ClientSize = System::Drawing::Size(560, 857);
+			this->Controls->Add(this->groupBox1);
 			this->Name = L"Form_3";
-			this->Text = L"Pizzaria sem Dono";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Text = L"Domingos Pizzas";
 			this->ResumeLayout(false);
 
 			}

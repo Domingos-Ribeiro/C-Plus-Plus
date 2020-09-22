@@ -73,6 +73,7 @@ namespace ProjetoCLR {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->fileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->sairToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -103,7 +104,7 @@ namespace ProjetoCLR {
 				});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(642, 24);
+			this->menuStrip1->Size = System::Drawing::Size(918, 24);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
@@ -120,8 +121,9 @@ namespace ProjetoCLR {
 			// sairToolStripMenuItem
 			// 
 			this->sairToolStripMenuItem->Name = L"sairToolStripMenuItem";
-			this->sairToolStripMenuItem->Size = System::Drawing::Size(93, 22);
+			this->sairToolStripMenuItem->Size = System::Drawing::Size(180, 22);
 			this->sairToolStripMenuItem->Text = L"Sair";
+			this->sairToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::sairToolStripMenuItem_Click);
 			// 
 			// editToolStripMenuItem
 			// 
@@ -239,11 +241,15 @@ namespace ProjetoCLR {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(642, 585);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->ClientSize = System::Drawing::Size(918, 670);
 			this->Controls->Add(this->menuStrip1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"Form1";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Resumo dos Exercícios de C++";
+			this->TopMost = true;
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
@@ -268,6 +274,12 @@ private: System::Void segundoToolStripMenuItem_Click(System::Object^ sender, Sys
 	ProjetoCLR::Form_3 formS;
 	formS.ShowDialog();
 	this->Show();
+
+	}
+private: System::Void sairToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+	Windows::Forms::DialogResult fechar = MessageBox::Show("Tem certeza que deseja sair?\nHoje temos mais descontos!", "Aviso", MessageBoxButtons::YesNo, MessageBoxIcon::Warning);
+	if (fechar == Windows::Forms::DialogResult::Yes) Application::Exit();
 
 	}
 };

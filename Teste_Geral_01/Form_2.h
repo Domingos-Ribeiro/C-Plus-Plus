@@ -56,6 +56,7 @@ namespace ProjetoCLR {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(714, 642);
 			this->Name = L"Form_2";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Toolbox Itens";
 			this->ResumeLayout(false);
 
