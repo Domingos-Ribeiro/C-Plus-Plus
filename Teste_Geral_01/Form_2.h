@@ -276,6 +276,7 @@ namespace ProjetoCLR {
 			this->button5->TabIndex = 29;
 			this->button5->Text = L"Limpar";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &Form_2::button5_Click);
 			// 
 			// button4
 			// 
@@ -285,6 +286,7 @@ namespace ProjetoCLR {
 			this->button4->TabIndex = 28;
 			this->button4->Text = L"Somar";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &Form_2::button4_Click);
 			// 
 			// textBox5
 			// 
@@ -294,6 +296,7 @@ namespace ProjetoCLR {
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(64, 23);
 			this->textBox5->TabIndex = 27;
+			this->textBox5->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// textBox4
 			// 
@@ -680,7 +683,7 @@ private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e
 	else
 		{
 
-		txt_resultado_idade->Text = "Ainda é Menor de idade, só pode tirar a carta de bicicleta.";
+		txt_resultado_idade->Text = "Ainda é Menor de idade.";
 		}
 	}
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e)
@@ -796,6 +799,16 @@ private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ 
 		{
 		MessageBox::Show("O nome do Clube digitado, não existe na ListBox");
 		}
+	}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+	textBox5->Text = Convert::ToString(Convert::ToInt16(textBox3->Text) + Convert::ToInt16(textBox4->Text));
+	}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+	textBox3->Text = "";
+	textBox4->Text = "";
+	textBox5->Text = "";
 	}
 };
 }
